@@ -2,5 +2,10 @@
   "db": {
     "name": "db",
     "connector": "memory"
+  },
+  "petstore": {
+    "name": "petstore",
+    "connector": "swagger",
+    "spec": "http://petstore.swagger.io/v2/swagger.json"
   }
 }
