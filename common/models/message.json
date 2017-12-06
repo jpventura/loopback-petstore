@@ -7,7 +7,6 @@
   "acls": [],
   "methods": {
     "greet": {
-      "isStatic": true,
       "accepts": [
         {
           "arg": "msg",
