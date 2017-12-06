@@ -37,5 +37,9 @@
   },
   "Message": {
     "dataSource": null
+  },
+  "Pet": {
+    "dataSource": "petstore",
+    "public": true
   }
 }

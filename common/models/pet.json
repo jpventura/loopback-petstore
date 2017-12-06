@@ -1,0 +1,55 @@
+{
+  "name": "Pet",
+  "base": "PersistedModel",
+  "plural": "pet",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "format": "int64"
+    },
+    "category": {
+      "type": "Category"
+    },
+    "name": {
+      "type": "string",
+      "required": true,
+      "example": "doggie"
+    },
+    "photoUrls": {
+      "type": [
+        "string"
+      ],
+      "required": true,
+      "xml": {
+        "name": "photoUrl",
+        "wrapped": true
+      }
+    },
+    "tags": {
+      "type": [
+        "Tag"
+      ],
+      "xml": {
+        "name": "tag",
+        "wrapped": true
+      }
+    },
+    "status": {
+      "type": "string",
+      "description": "pet status in the store",
+      "enum": [
+        "available",
+        "pending",
+        "sold"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
