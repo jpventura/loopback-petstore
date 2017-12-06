@@ -1,7 +1,7 @@
 {
   "name": "Pet",
-  "base": "PersistedModel",
   "plural": "pet",
+  "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true

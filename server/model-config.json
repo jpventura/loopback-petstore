@@ -39,7 +39,7 @@
     "dataSource": null
   },
   "Pet": {
-    "dataSource": "petstore",
+    "dataSource": null,
     "public": true
   }
 }
